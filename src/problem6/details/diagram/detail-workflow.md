@@ -19,7 +19,7 @@ This specification expands on the system design features by detailing the intern
 
 **Security:** Input validation + email uniqueness + password hashing.
 
-![Workflow](diagram/user-registration-workflow.png)
+![Workflow](user-registration-workflow.png)
 
 ---
 
