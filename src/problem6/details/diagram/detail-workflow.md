@@ -36,6 +36,8 @@ This specification expands on the system design features by detailing the intern
 
 **Security:** Use JWT with expiry and signature. Rate-limit brute force attempts.
 
+![Workflow](user-login-workflow.png)
+
 ---
 
 ### 3. ✅ Score Update via User Action
@@ -53,6 +55,8 @@ This specification expands on the system design features by detailing the intern
 
 **Security:** Auth middleware to reject unauthenticated users.
 
+![Workflow](score-update-workflow.png)
+
 ---
 
 ### 4. 🔒 Secure Endpoint to Prevent Score Tampering
@@ -65,6 +69,8 @@ This specification expands on the system design features by detailing the intern
 * Implement RBAC if needed (e.g., only user can update their own score).
 * Log abnormal requests (e.g., massive increments, frequency threshold).
 * Apply rate-limiting middleware.
+
+![Workflow](secure-endpoint-workflow.png)
 
 ---
 
@@ -81,6 +87,8 @@ This specification expands on the system design features by detailing the intern
 
 **Alternative:** Use Server-Sent Events (SSE) for simpler push stream.
 
+![Workflow](live-scoreboard-display-workflow.png)
+
 ---
 
 ### 6. 📃 Scoreboard Initialization / Refresh
@@ -94,6 +102,8 @@ This specification expands on the system design features by detailing the intern
 3. Response returns JSON array of top scorers.
 
 **Optional:** Allow filters by region, time period, etc.
+
+![Workflow](refresh-scoreboard-workflow.png)
 
 ---
 
